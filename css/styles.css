@@ -1,0 +1,292 @@
+*{
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+}
+
+div{
+    display: block;
+}
+body{
+    
+    text-align: center;
+    background:  #090a0f ;
+    font-family: 'Sarabun', sans-serif;
+    letter-spacing: 8px;
+    font-size: 200%;
+    overscroll-behavior: none;
+    margin: 0;
+ 
+
+}
+hr {
+    background-color: #090a0f;
+}
+
+
+h1 {
+    
+    font-size: 5.625rem;
+    color: #fff;
+    background: linear-gradient(260deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin: 16rem auto auto auto;
+    padding-bottom: 30px;
+   
+}
+h2 {
+    font-size: 1.1875rem;
+    color: #fff;
+    margin: auto auto auto auto;
+    font-weight: normal;
+    box-sizing: inherit;
+}
+
+h3 {
+    font-size:1.5625rem;
+    background: linear-gradient(260deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
+    margin: 0 auto 0 auto;
+}
+p{
+    font-size: 1.4rem;
+    color: #fff;
+    box-sizing: inherit;
+    
+    
+}
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+.navigation{
+    z-index: 100;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:  #090a0f;
+}
+.nav-links{
+    background-color: #090a0f;
+    display: flex;
+    width: 84%;
+    justify-content: space-around;
+    padding: auto;
+    font-size: 2%;  
+}
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 1.2rem; 
+}
+
+.nav-links li{
+    list-style: none;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 1.5px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.5s ease-in;
+}
+@media screen and (max-width:1024px){
+    body{
+       display: 60%;
+    }
+}
+@media screen and (max-width:768px){
+    body
+    {
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 108vh;
+        top: -1vh;   
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+
+    }
+    .nav-links li {
+        opacity: 0;
+       
+    }
+    .burger {
+        display: block;
+    }
+    .nav-links a{
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 3px;
+        
+        font-size: 1.9rem;   
+    }
+    .a-programmer{
+        margin: auto;
+        
+    }
+    
+    
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+
+
+
+.cafe{
+    width: 23px;
+    position: inherit;
+}
+.a-programmer{
+    margin-bottom: 330px;
+}
+
+
+
+
+
+
+
+.btn {
+    color: #fff;
+}
+
+.skill-row {
+    width: 60%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    
+}
+.code-image{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+    
+}
+.eye{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+.skills{
+    background-color: #111;
+    border-radius: 28px;
+    margin: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    
+  
+}
+
+.middle-container{
+    
+    
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 100px 10% auto 10% ;
+    
+  
+}
+
+@media (max-width: 800px) {
+    .middle-container {
+      flex-direction: column;
+      text-align: center;
+      margin: 15%;
+      margin-top: 10%;
+      
+    }
+  }
+  
+.pic-elmo{
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    
+}
+.elmo{
+    margin: auto;
+    max-width: 600px;
+    height:auto;
+    
+    
+}
+.profile{
+    max-width: 600px;
+    height: auto;
+    text-align: left;
+    margin: 0 auto auto 70px ;
+    
+ 
+}
+.profile-right{
+    
+    
+    width: 100%;
+}
+
+.introduction{
+    font-size: auto;
+    
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+
